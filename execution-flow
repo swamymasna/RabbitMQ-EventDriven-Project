@@ -1,0 +1,40 @@
+Pull Docker Image:
+------------------
+   cmd>  docker pull rabbitmq:3.11.8-management
+
+Run RabbitMQ Docker Image in Docker Container:
+----------------------------------------------
+   cmd>  docker run --rm -it -p 15672:15672 -p 5672:5672 rabbitmq:3.10-management
+
+To visit the RabbitMQ management website:
+-----------------------------------------
+URL 	http://localhost:15672 
+
+
+=> Make the POST Request From Order-Service
+********************************************
+
+Run the SpringBoot Application and Enter Below URL
+---------------------------------------------------
+POST    http://localhost:8081/api/v1/orders
+{
+  "orderName" : "LAPTOP",
+  "orderQty" : 85
+}
+
+
+
+Refresh the RabbitMQ management website:
+-----------------------------------------
+URL 	http://localhost:15672 
+      > click on 'queue' -> get messages
+      
+      
+=> Order Data Will be Stored In Database From Stock-Service
+************************************************************      
+      
+=> Order Data Will be Received and Sent Email From Email-Service
+*****************************************************************      
+      
+      
+      
