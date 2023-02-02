@@ -1,0 +1,13 @@
+## ORDER-EMAIL-BODY-TEMPLATE.txt
+
+Welcome User : {USER} .,
+
+Welcome to SM Kart Shopping & Your Order Details :
+
+Order Id     : {ORDER-ID}
+Order Name   : {ORDER-NAME}
+Order Qty    : {ORDER-QTY}
+Order Status : {ORDER-STATUS}
+
+Thanks Regards..
+	SM Shopping Kart..!
